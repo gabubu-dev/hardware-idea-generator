@@ -1,0 +1,100 @@
+{
+  "title": "3x3x3 LED Cube",
+  "description": "A mesmerizing 3D LED display cube with programmable animations. Great introduction to multiplexing and 3D visualization.",
+  "category": "Display",
+  "skillLevel": "intermediate",
+  "estimatedCost": {
+    "min": 25,
+    "max": 40
+  },
+  "estimatedTime": "8-12 hours",
+  "features": [
+    "27 individually controllable LEDs",
+    "Multiple animation patterns",
+    "Multiplexing control technique",
+    "Custom pattern programming",
+    "Low power consumption"
+  ],
+  "components": [
+    {
+      "name": "Arduino Nano",
+      "quantity": 1,
+      "estimatedCost": 8,
+      "purpose": "Control the LED matrix"
+    },
+    {
+      "name": "5mm LEDs (Blue or RGB)",
+      "quantity": 27,
+      "estimatedCost": 5,
+      "purpose": "Form the 3x3x3 cube structure"
+    },
+    {
+      "name": "NPN Transistors (2N2222 or similar)",
+      "quantity": 3,
+      "estimatedCost": 2,
+      "purpose": "Layer switching for multiplexing"
+    },
+    {
+      "name": "Resistors (220Ω)",
+      "quantity": 9,
+      "estimatedCost": 1,
+      "purpose": "Current limiting for LED columns"
+    },
+    {
+      "name": "Resistors (1kΩ)",
+      "quantity": 3,
+      "estimatedCost": 1,
+      "purpose": "Base resistors for transistors"
+    },
+    {
+      "name": "Perfboard or PCB",
+      "quantity": 1,
+      "estimatedCost": 3,
+      "purpose": "Mounting base"
+    },
+    {
+      "name": "Wire (solid core)",
+      "quantity": 1,
+      "estimatedCost": 3,
+      "purpose": "Building cube structure"
+    }
+  ],
+  "steps": [
+    "Plan the cube layout and wiring scheme",
+    "Bend LEDs to create uniform spacing (use a jig)",
+    "Solder LEDs into 3 layers of 3x3 grids",
+    "Connect layers vertically to form the cube",
+    "Wire layer control to transistors",
+    "Connect column controls to Arduino pins",
+    "Mount cube on base with Arduino",
+    "Upload multiplexing control code",
+    "Program custom animation patterns"
+  ],
+  "learningResources": [
+    {
+      "type": "tutorial",
+      "title": "LED Multiplexing Explained",
+      "description": "Understanding how to control many LEDs with few pins"
+    },
+    {
+      "type": "video",
+      "title": "Building an LED Cube",
+      "description": "Step-by-step construction guide"
+    },
+    {
+      "type": "code",
+      "title": "LED Cube Animation Library",
+      "description": "Pre-made patterns and effects"
+    }
+  ],
+  "tips": [
+    "Use a jig (cardboard with holes) to bend LEDs consistently",
+    "Test each layer before assembling the full cube",
+    "Solder quickly to avoid damaging LEDs with heat",
+    "Start with simple animations before complex 3D effects",
+    "Consider using shift registers to reduce pin count (advanced)"
+  ],
+  "tags": ["display", "led", "arduino", "multiplexing", "soldering"],
+  "difficulty": "intermediate",
+  "popularity": 8
+}

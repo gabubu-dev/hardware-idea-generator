@@ -1,0 +1,94 @@
+{
+  "title": "Smart Plant Monitoring System",
+  "description": "IoT-enabled plant monitoring with soil moisture, light, and temperature sensors. Sends notifications when plants need water.",
+  "category": "IoT",
+  "skillLevel": "intermediate",
+  "estimatedCost": {
+    "min": 35,
+    "max": 55
+  },
+  "estimatedTime": "6-8 hours",
+  "features": [
+    "Real-time soil moisture monitoring",
+    "Temperature and humidity tracking",
+    "Light level detection",
+    "WiFi notifications via smartphone",
+    "Web dashboard for data visualization",
+    "Automatic watering trigger (optional)"
+  ],
+  "components": [
+    {
+      "name": "ESP32 DevKit",
+      "quantity": 1,
+      "estimatedCost": 10,
+      "purpose": "Main microcontroller with WiFi"
+    },
+    {
+      "name": "Capacitive Soil Moisture Sensor",
+      "quantity": 1,
+      "estimatedCost": 3,
+      "purpose": "Measure soil moisture level"
+    },
+    {
+      "name": "DHT22 Temperature/Humidity Sensor",
+      "quantity": 1,
+      "estimatedCost": 5,
+      "purpose": "Monitor environmental conditions"
+    },
+    {
+      "name": "LDR Photoresistor",
+      "quantity": 1,
+      "estimatedCost": 1,
+      "purpose": "Measure light levels"
+    },
+    {
+      "name": "0.96 inch OLED Display",
+      "quantity": 1,
+      "estimatedCost": 8,
+      "purpose": "Local data display"
+    },
+    {
+      "name": "5V Relay Module (optional)",
+      "quantity": 1,
+      "estimatedCost": 4,
+      "purpose": "Control water pump"
+    },
+    {
+      "name": "Jumper Wires and Breadboard",
+      "quantity": 1,
+      "estimatedCost": 5,
+      "purpose": "Prototyping connections"
+    }
+  ],
+  "steps": [
+    "Connect soil moisture sensor to ESP32 analog pin",
+    "Wire DHT22 to digital pin with pull-up resistor",
+    "Connect OLED display via I2C (SDA/SCL pins)",
+    "Set up WiFi credentials in code",
+    "Configure cloud service (ThingSpeak, Blynk, or custom)",
+    "Upload firmware to ESP32",
+    "Calibrate sensors with known moisture levels",
+    "Test notification system",
+    "(Optional) Add relay and water pump for automation"
+  ],
+  "learningResources": [
+    {
+      "type": "tutorial",
+      "title": "ESP32 WiFi Basics",
+      "url": "https://randomnerdtutorials.com/esp32-wifi-manager-asyncwebserver/"
+    },
+    {
+      "type": "library",
+      "title": "DHT Sensor Library",
+      "url": "https://github.com/adafruit/DHT-sensor-library"
+    },
+    {
+      "type": "documentation",
+      "title": "Capacitive vs Resistive Soil Sensors",
+      "description": "Understanding different soil moisture sensor types"
+    }
+  ],
+  "tags": ["iot", "esp32", "sensor", "wifi", "automation", "plants"],
+  "difficulty": "intermediate",
+  "popularity": 9
+}

@@ -1,0 +1,26 @@
+{
+  "name": "hardware-idea-generator",
+  "version": "1.0.0",
+  "description": "AI-driven hardware project idea generator with feasibility analysis",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "generate": "node src/cli.js generate",
+    "analyze": "node src/cli.js analyze",
+    "template": "node src/cli.js template",
+    "example": "node src/examples/run-example.js"
+  },
+  "keywords": [
+    "hardware",
+    "electronics",
+    "project-ideas",
+    "ai",
+    "maker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
