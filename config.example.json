@@ -1,0 +1,18 @@
+{
+  "openai_api_key": "your-openai-api-key-here",
+  "model": "gpt-4",
+  "categories": [
+    "iot_sensors",
+    "wearables",
+    "smart_home",
+    "robotics",
+    "environmental_monitoring",
+    "health_tech"
+  ],
+  "feasibility_factors": {
+    "technical_complexity": 0.3,
+    "manufacturing_cost": 0.25,
+    "market_demand": 0.25,
+    "differentiation": 0.2
+  }
+}
